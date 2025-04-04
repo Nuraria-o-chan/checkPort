@@ -23,7 +23,7 @@ const Index = () => {
     dispatch(setStateActive(isActive));
     dispatch(setCurrentPage(0));
   };
-  const valueSort = listActive[selected];
+  // const valueSort = listActive[selected];
   return (
     <search className={styles.search}>
       <input placeholder="Название меню" />
@@ -31,7 +31,7 @@ const Index = () => {
       <input placeholder="Торговая точка" />
 
       <div onClick={() => setOpen(!open)} className={styles.input}>
-        <div className={styles.dropdown}>{valueSort}</div>
+        <div className={styles.dropdown}>Выберити</div>
         <div className={styles.button}>
           <img src={ARROW} alt="arrow" />
         </div>
