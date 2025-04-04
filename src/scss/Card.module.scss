@@ -1,0 +1,13 @@
+.card{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    p{
+        width: 150px;
+    }
+}
+
+.buttons{
+    margin-right: 11px;
+    cursor: pointer;
+}

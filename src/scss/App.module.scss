@@ -1,0 +1,114 @@
+@use "mixins";
+
+.Home {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 270px 1fr;
+  grid-template-areas: "sidebar main";
+
+  main {
+    padding-left: 26px;
+  }
+
+  section {
+    top: 0;
+    position: sticky;
+    align-self: start;
+    height: calc(100vh - 120px);
+    grid-area: sidebar;
+    // background-color: antiquewhite;
+
+    header {
+      width: 257px;
+      height: 116px;
+      @include mixins.shadow;
+      padding: 10px 15px 0 10px;
+      font-size: 18px;
+      margin-bottom: 15px;
+      cursor: pointer;
+      // hr{
+      //   border: 1px solid #072659;
+      // }
+
+      .header__profile {
+        width: 42px;
+        height: 42px;
+        background-color: #072659;
+        border-radius: 50%;
+        color: #ffffff;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 42px;
+        font-size: 18px;
+        margin-right: 10px;
+      }
+
+      .header__company {
+        display: flex;
+        margin-bottom: 10px;
+        p {
+          color: #657a9d;
+        }
+      }
+
+      .header__warehouse_accounting {
+        display: flex;
+        align-items: center;
+        margin-top: 5px;
+      }
+    }
+
+    nav {
+      display: flex;
+      flex-direction: column;
+      width: 270px;
+      padding-right: 15px;
+      overflow: auto;
+      height: 690px;
+      border-right: 1px solid rgba(7, 38, 89, 0.7);
+
+      p {
+        color: #657a9d;
+      }
+      hr {
+        border: 1px solid #657a9d;
+        margin-top: 10px;
+      }
+      .nav__link {
+        width: 250px;
+        height: 30px;
+        padding-left: 10px;
+        vertical-align: middle;
+        line-height: 30px;
+        font-size: 16px;
+        &:focus {
+          @include mixins.shadow;
+        }
+      }
+      .nav__link-active {
+        @include mixins.shadow;
+      }
+    }
+
+    main {
+      grid-area: main;
+      // background-color: cadetblue;
+    }
+  }
+
+  @media (max-width: 800px) {
+    .Home {
+      grid-template-columns: 0fr 1fr;
+    }
+
+    section {
+      position: fixed;
+      width: 270px;
+      display: none;
+    }
+
+    .show {
+      display: block;
+    }
+  }
+}

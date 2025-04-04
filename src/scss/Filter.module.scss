@@ -1,0 +1,78 @@
+@use "mixins";
+
+.search {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 15px;
+
+  input {
+    width: 146px;
+    height: 32px;
+    font-size: 16px;
+    @include mixins.inputTheme;
+    color: #657a9d;
+    &::placeholder {
+      color: #657a9d;
+    }
+  }
+
+  span {
+    vertical-align: middle;
+    line-height: 32px;
+    color: #657a9d;
+  }
+}
+
+.input {
+  position: relative;
+}
+
+.dropdown {
+  width: 146px;
+  height: 32px;
+  font-size: 16px;
+  @include mixins.inputTheme;
+  vertical-align: middle;
+  line-height: 30px;
+}
+
+.button {
+  width: 28px;
+  height: 32px;
+  background-color: #072659;
+  position: absolute;
+  border-radius: 0 5px 5px 0;
+  top: 0;
+  right: 0;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 30px;
+  cursor: pointer;
+}
+
+.popup {
+  position: absolute;
+  width: 255px;
+  min-height: 40px;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  vertical-align: middle;
+  line-height: 40px;
+  @include mixins.shadow;
+}
+
+.li {
+  height: 40px;
+  padding-left: 15px;
+  cursor: pointer;
+
+  &:active {
+    @include mixins.shadow;
+  }
+
+  &:hover {
+    @include mixins.shadow;
+    transition: 0.5s;
+  }
+}

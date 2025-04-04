@@ -1,0 +1,13 @@
+@mixin inputTheme {
+  border: 1px solid #657a9d;
+  border-radius: 5px;
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+@mixin shadow($shadow: shadowTheme) {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background: #fff;
+}
+
+$baseColor: #072659;

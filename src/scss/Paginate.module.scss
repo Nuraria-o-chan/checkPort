@@ -1,0 +1,35 @@
+@use "mixins";
+
+.root {
+  position: fixed;
+  top: 900px; /* Расстояние от верхнего края окна */
+  left: 320px;
+
+  li {
+    display: inline-block;
+    
+
+    a {
+      display: inline-block;
+      text-align: center;
+      width: 30px;
+      height: 32px;
+      border-radius: 5px;
+      list-style: none;
+      line-height: 30px;
+      margin-right: 10px;
+      cursor: pointer;
+      &:hover {
+        @include mixins.shadow;
+      }
+    }
+  }
+
+  :global {
+    .selected {
+      a {
+        @include mixins.shadow;
+      }
+    }
+  }
+}
