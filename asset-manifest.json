@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/checkPort/static/css/main.dae571ec.css",
+    "main.js": "/checkPort/static/js/main.0d8e271c.js",
+    "static/media/list.svg": "/checkPort/static/media/list.f3a89d4233455c6fb9ecdb31cbf92434.svg",
+    "index.html": "/checkPort/index.html",
+    "static/media/cart.svg": "/checkPort/static/media/cart.7506a928c3233f2eb1875e1bab1ef7be.svg",
+    "static/media/pencil.svg": "/checkPort/static/media/pencil.12641cbcd45b1e761f5ccb82f93e19d8.svg",
+    "static/media/chart.svg": "/checkPort/static/media/chart.1d525e82f03677ccfa0abb412c51c025.svg",
+    "static/media/leftArrow.svg": "/checkPort/static/media/leftArrow.e9cbd5ff08abb5cc480c9b358f902d03.svg",
+    "static/media/rightArrow.svg": "/checkPort/static/media/rightArrow.c336c8908f49fdd98ca7ae7b08bc919e.svg",
+    "static/media/arrow1.svg": "/checkPort/static/media/arrow1.68332b9cfdb55736812320233ba68bd8.svg",
+    "main.dae571ec.css.map": "/checkPort/static/css/main.dae571ec.css.map",
+    "main.0d8e271c.js.map": "/checkPort/static/js/main.0d8e271c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dae571ec.css",
+    "static/js/main.0d8e271c.js"
+  ]
+}
