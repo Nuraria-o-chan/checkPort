@@ -5,15 +5,15 @@ module.exports = {
         {
           test: /\.s[ac]ss$/i,
           use: [
-            "style-loader", // Вставляет CSS в DOM
+            "style-loader", 
             {
-              loader: "css-loader", // Обрабатывает @import и url()
+              loader: "css-loader",
               options: {
-                modules: true, // Включить CSS Modules (опционально, но рекомендуется)
-                localIdentName: "[name]__[local]--[hash:base64:5]", // Настройка имен классов (опционально)
+                modules: true, 
+                localIdentName: "[name]__[local]--[hash:base64:5]", 
               },
             },
-            "sass-loader", // Компилирует Sass в CSS
+            "sass-loader", 
           ],
         },
       ],
